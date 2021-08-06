@@ -1,0 +1,39 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "natours project for tours",
+  "main": "app.js",
+  "scripts": {
+    "start": "NODE_ENV=development nodemon server.js",
+    "start:prod": "NODE_ENV=production nodemon server.js",
+    "watch:js": "parcel watch  --no-hmr ./public/js/index.js --out-dir ./public/js --out-file bundle.js"
+  },
+  "author": "pradeep",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-mongo-sanitize": "^2.1.0",
+    "express-rate-limit": "^5.3.0",
+    "helmet": "^4.6.0",
+    "hpp": "^0.2.3",
+    "html-to-text": "^8.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.3",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.6.3",
+    "pug": "^3.0.2",
+    "sharp": "^0.28.3",
+    "slugify": "^1.6.0",
+    "stripe": "^8.168.0",
+    "validator": "^13.6.0",
+    "xss-clean": "^0.1.1"
+  },
+  "devDependencies": {
+    "axios": "^0.21.1",
+    "parcel-bundler": "^1.12.5"
+  }
+}
